@@ -101,7 +101,8 @@ set thread num:5
 测试发现FeatherCNN架构下相同模型处理相同任务的运行时间小于ncnn架构下运行的模型，但FeatherCNN的内存占用更高。  
   
 例如在使用三个线程的情况下:  
-| |FeatherCNN|ncnn|
+
+|...|FeatherCNN|ncnn|
 |---|---|---|
 |model name | time cost(ms) / memory space cost for each thread( use / toal)| ...|
 |googlenet|593.003829/0.213|1104.423451/0.146|
