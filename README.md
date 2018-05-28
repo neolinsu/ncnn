@@ -2,18 +2,20 @@
 
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://raw.githubusercontent.com/Tencent/ncnn/master/LICENSE.txt) 
 
-尝试将ncnn移植到Raspberry 3平台上，并添加了aarch64平台的测试程序。
+尝试将ncnn移植到Raspberry 3平台上，并添加了aarch64平台的测试程序。  
 **在ubuntu18.04 aarch64 on Raspberry 3 上测试通过**
 
 ---
 
 ### 编译参数
 以下命令将构建ncnn的在当前平台架构下的转换工具（在`/tools`中）已经相应算法库。
+
 ```
 cmake .
 make
 ```
 以下命令将构建ncnn在aarch64下的测试工具（`/examples/test/`）和相应算法库。
+
 ```
 cmake . -AARCH64=TRUE
 make
@@ -28,8 +30,10 @@ Under BVLC/caffe/tools:
 upgrade_net_proto_binary v0_net_proto_file_in net_proto_file_out
 upgrade_net_proto_text v0_net_text_file_in net_text_file_out
 ```
+
 将caffe模型转换为ncnn模型。
 Under neolinsu/tools/caffe:
+
 ```
 ./caffe2ncnn [caffeproto] [caffemodel] [ncnnproto] [ncnnbin] [quantizelevel]
 ```
@@ -39,7 +43,7 @@ Under neolinsu/tools/caffe:
 ```
 ./test [bin] [param] [data] [loop_count] [num_threads]
 ```
-其中`[data]`指向一个符合相应规格的文本文件（因为仅用作测试，这里不考虑精度问题）。
+其中`[data]`指向一个符合相应规格的文本文件（因为仅用作测试，这里不考虑精度问题）。  
 
 程序将打印相应信息，例如：
 ```
@@ -90,12 +94,13 @@ set thread num:5
 ----------Prediction costs 1263.887264ms
 --------Average runtime 1230.012656msi------
 ```
+---
 
 ### 与FeatherCNN的对比
 
-测试发现FeatherCNN架构下相同模型处理相同任务的运行时间小于ncnn架构下运行的模型，但FeatherCNN的内存占用更高。
-
-例如在使用三个线程的情况下:
+测试发现FeatherCNN架构下相同模型处理相同任务的运行时间小于ncnn架构下运行的模型，但FeatherCNN的内存占用更高。  
+  
+例如在使用三个线程的情况下:  
 | |FeatherCNN|ncnn|
 |---|---|---|
 |model name | time cost(ms) / memory space cost for each thread( use / toal)| ...|
