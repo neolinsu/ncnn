@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp -O3 -DNDEBUG  -rdynamic CMakeFiles/squeezenet.dir/squeezenet.cpp.o  -o squeezenet ../src/libncnn.a /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.9 /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.9 /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.9 
