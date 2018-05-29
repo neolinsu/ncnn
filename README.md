@@ -14,7 +14,7 @@
 cmake .
 make
 ```
-以下命令将构建ncnn在aarch64下的测试工具（`/examples/test/`）和相应算法库。
+以下命令将构建ncnn在aarch64下的测试工具（`/examples/test`）和相应算法库。
 
 ```
 cmake . -AARCH64=TRUE
