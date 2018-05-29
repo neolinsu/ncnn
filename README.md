@@ -106,3 +106,5 @@ set thread num:5
 |---|---|---|
 |model name | time cost(ms) / memory space cost for each thread( use / toal)| ...|
 |googlenet|593.003829/0.213|1104.423451/0.146|
+
+详细的测试结果保存在`./testWithFeatherCNN/Comparison.xlsx`中。
