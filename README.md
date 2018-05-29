@@ -27,8 +27,8 @@ make
 将caffe的模型文件转换为最新版本模型文件。
 Under BVLC/caffe/tools:
 ```
-upgrade_net_proto_binary v0_net_proto_file_in net_proto_file_out
-upgrade_net_proto_text v0_net_text_file_in net_text_file_out
+./upgrade_net_proto_binary v0_net_proto_file_in net_proto_file_out
+./upgrade_net_proto_text v0_net_text_file_in net_text_file_out
 ```
 
 将caffe模型转换为ncnn模型。
