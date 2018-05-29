@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://raw.githubusercontent.com/Tencent/ncnn/master/LICENSE.txt) 
 
-尝试将ncnn移植到Raspberry 3平台上，并添加了aarch64平台的测试程序。  
+尝试将ncnn移植到Raspberry-pi 3平台上，并添加了aarch64平台的测试程序。  
 **在ubuntu18.04 aarch64 on Raspberry 3 上测试通过**
 
 ---
